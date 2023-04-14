@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Odin's Etch-a-Sketch</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Etch-A-Sketch</h1>
+        </div>
+        <div class="slider-container">
+        <input type="range" id="slider" min="1" max="99" oninput="getValue()">
+        <input type="text" id="text-input" value="">
+        </div>
+        <div id="grid-container"></div>
+        <button class="reset-button" type="button">Reset</button>
+        <script src="js-files.js"></script>
+    </body>
+</html>
