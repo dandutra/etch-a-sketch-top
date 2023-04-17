@@ -18,7 +18,9 @@ body {
     gap: 4px;
 }
 
-#slider {
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    color: black;
     display:flex;
     align-self:center;
 }
@@ -31,18 +33,22 @@ body {
 
 #grid-container {
     display:grid;
-    grid-template-columns: repeat(16, 16fr);
+    grid-template-columns: repeat(50, 50fr);
     align-self: center;
-    border: 1px solid red;
-    min-height: 300px;
-    min-width: 300px;
+    min-height: 500px;
+    min-width: 500px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+.cell {
+    display: flex;
+}
+
 
 .reset-button {
     display:inline-block;
     align-self: center;
-    background-color: blue;
-    color:aliceblue;
+    background-color: #f4f4f4;
     width:min-content;
     margin-top: 20px;
     border-radius: 15px;
